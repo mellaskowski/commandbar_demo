@@ -4,13 +4,25 @@ declare module 'valtio' {
   function snapshot<T extends object>(p: T): T;
 }
 
-/** Companies */
+export interface Icon extends Record<string, unknown> {
+  id: string;
+  name: string;
+  description: IconDescription;
+  occupation: string[];
+}
+
+export interface IconDescription {
+  awards: string; // make own interface when fields are known
+
+}
+
+/** Companies in Sex Tech */
 export interface Company extends Record<string, unknown> {
   id: string;
   label: string;
   stageId: string;
-  contactName: string;
-  contactEmail: string;
+  founders: string[];
+  siteURL: string;
   notes: CompanyNote[];
   labels: string[];
   annualContractValue: number;
