@@ -23,12 +23,12 @@ const store: Store = proxy({
   stages,
   integrations,
   currentUser: {
-    name: 'Jim Halpert',
-    imgURL: 'https://staticassets.commandbar.com/showcase/jim-halpert-headshot.jpeg',
+    name: 'Scooby Dooby Doo',
+    imgURL: 'https://en.wikipedia.org/wiki/File:Scooby-Doo.png',
   },
   otherUser: {
-    name: 'Pam Beesly',
-    imgURL: 'https://staticassets.commandbar.com/showcase/pam_beesly.jpeg',
+    name: 'Scrappy Doo',
+    imgURL: 'https://static.wikia.nocookie.net/p__/images/8/8f/Scrappy-Doo_promo.png/revision/latest?cb=20190917160755&path-prefix=protagonist',
   },
   notifications: [],
 });
