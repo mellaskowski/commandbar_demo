@@ -22,8 +22,9 @@ export interface Company extends Record<string, unknown> {
   name: string;
   label: string;
   stageId: string;
-  founders: string[] | Icon[];
-  siteURL: string;
+  founders?: string[] | Icon[];
+  contactEmail: string;
+  siteURL?: string;
   notes: CompanyNote[];
   labels: string[];
   annualContractValue: number;

@@ -3,8 +3,8 @@ import { formatISO } from "../../components/utils";
 import { Vocab } from "../types";
 
 
-const vocabWords: Vocab[] = {
+// const vocabWords: Vocab[] = {
 
-};
+// };
 
-export vocabWords;
+// export vocabWords;
