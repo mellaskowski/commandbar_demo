@@ -5,10 +5,10 @@ import { Company } from "../types";
 const companies: Company[] = [
   {
     id: "MFx7N8NQJFOV5e7yTGyBQ",
-    label: "The Krusty Krab",
+    label: "LELO",
     stageId: "5",
     contactEmail: "eugene@krustykrabs.com",
-    contactName: "Eugene H. Krabs",
+    name: "Eugene H. Krabs",
     notes: [
       {
         id: nanoid(),
@@ -25,7 +25,7 @@ const companies: Company[] = [
     label: "GameStop",
     stageId: "5",
     contactEmail: "roaringkitty@wsb.com",
-    contactName: "Roaring Kitty",
+    name: "Roaring Kitty",
     notes: [
       {
         id: nanoid(),
@@ -52,7 +52,7 @@ const companies: Company[] = [
     label: "Stark Industries",
     stageId: "6",
     contactEmail: "tony@starkindustries.com",
-    contactName: "Tony Stark",
+    name: "Tony Stark",
     notes: [
       {
         id: nanoid(),
@@ -69,7 +69,7 @@ const companies: Company[] = [
     label: "Wayne Enterprises, Inc.",
     stageId: "6",
     contactEmail: "bruce@wayneenterprisesinc.com",
-    contactName: "Bruce Wayne",
+    name: "Bruce Wayne",
     notes: [
       {
         id: nanoid(),
@@ -86,7 +86,7 @@ const companies: Company[] = [
     label: "Iron Bank of Braavos",
     stageId: "1",
     contactEmail: "tycho@ironbankofbraavos.com",
-    contactName: "Tycho Nestoris",
+    name: "Tycho Nestoris",
     notes: [
       {
         id: nanoid(),
@@ -103,7 +103,7 @@ const companies: Company[] = [
     label: "Monsters, Inc.",
     stageId: "6",
     contactEmail: "james@monstersinc.com",
-    contactName: 'James P. "Sulley" Sullivan',
+    name: 'James P. "Sulley" Sullivan',
     notes: [
       {
         id: nanoid(),
@@ -120,7 +120,7 @@ const companies: Company[] = [
     label: "Bluth Company",
     stageId: "1",
     contactEmail: "michael@bluth.com",
-    contactName: "Michael Bluth",
+    name: "Michael Bluth",
     notes: [
       {
         id: nanoid(),
@@ -137,7 +137,7 @@ const companies: Company[] = [
     label: "Pawnee Parks & Recreation",
     stageId: "2",
     contactEmail: "tom@entertainment720.com",
-    contactName: "Tom Haverford",
+    name: "Tom Haverford",
     notes: [
       {
         id: nanoid(),
@@ -164,7 +164,7 @@ const companies: Company[] = [
     label: "Kim's Convenience",
     stageId: "3",
     contactEmail: "janet@kims.com",
-    contactName: "Janet Kim",
+    name: "Janet Kim",
     notes: [
       {
         id: nanoid(),
@@ -186,7 +186,7 @@ const companies: Company[] = [
     label: "Pearson Specter Litt",
     stageId: "1",
     contactEmail: "harvey@pearsonspecterlitt.com",
-    contactName: "Harvey Specter",
+    name: "Harvey Specter",
     notes: [
       {
         id: nanoid(),
@@ -203,7 +203,7 @@ const companies: Company[] = [
     label: "Pied Piper",
     stageId: "3",
     contactEmail: "richard@piedpiper.com",
-    contactName: "Richard Hendricks",
+    name: "Richard Hendricks",
     notes: [
       {
         id: nanoid(),
@@ -225,7 +225,7 @@ const companies: Company[] = [
     label: "Rent a Swag",
     stageId: "2",
     contactEmail: "tom@rentaswag.com",
-    contactName: "Tom Haverford",
+    name: "Tom Haverford",
     notes: [
       {
         id: nanoid(),
@@ -242,7 +242,7 @@ const companies: Company[] = [
     label: "The Derek Zoolander Center",
     stageId: "1",
     contactEmail: "derek@zoolandercenter.com",
-    contactName: "Derek Zoolander",
+    name: "Derek Zoolander",
     notes: [
       {
         id: nanoid(),
@@ -264,7 +264,7 @@ const companies: Company[] = [
     label: "Theranos",
     stageId: "4",
     contactEmail: "elizabeth@theranos.com",
-    contactName: "Elizabeth Holmes",
+    name: "Elizabeth Holmes",
     notes: [
       {
         id: nanoid(),
@@ -281,7 +281,7 @@ const companies: Company[] = [
     label: "Juicero",
     stageId: "7",
     contactEmail: "jeff@juicero.com",
-    contactName: "Jeff Dunn",
+    name: "Jeff Dunn",
     notes: [
       {
         id: nanoid(),
@@ -303,7 +303,7 @@ const companies: Company[] = [
     label: "Lehman Brothers",
     stageId: "6",
     contactEmail: "richard@lehmanbros.com",
-    contactName: "Richard Fuld",
+    name: "Richard Fuld",
     notes: [
       {
         id: nanoid(),
@@ -320,7 +320,7 @@ const companies: Company[] = [
     label: "Quibi",
     stageId: "2",
     contactEmail: "jeffrey@quibi.com",
-    contactName: "Jeffrey Katzenberg",
+    name: "Jeffrey Katzenberg",
     notes: [
       {
         id: nanoid(),
@@ -337,7 +337,7 @@ const companies: Company[] = [
     label: "Myspace",
     stageId: "4",
     contactEmail: "tom@myspace.com",
-    contactName: "Tom Anderson",
+    name: "Tom Anderson",
     notes: [
       {
         id: nanoid(),
@@ -359,7 +359,7 @@ const companies: Company[] = [
     label: "Yik Yak",
     stageId: "1",
     contactEmail: "tyler@yikyak.com",
-    contactName: "Tyler Droll",
+    name: "Tyler Droll",
     notes: [
       {
         id: nanoid(),
@@ -376,7 +376,7 @@ const companies: Company[] = [
     label: "Vine",
     stageId: "7",
     contactEmail: "dom@vine.com",
-    contactName: "Dom Hoffman",
+    name: "Dom Hoffman",
     notes: [
       {
         id: nanoid(),
@@ -398,7 +398,7 @@ const companies: Company[] = [
     label: "Blockbuster",
     stageId: "6",
     contactEmail: "wayne@blockbuster.com",
-    contactName: "Wayne Huizenga",
+    name: "Wayne Huizenga",
     notes: [
       {
         id: nanoid(),
@@ -415,7 +415,7 @@ const companies: Company[] = [
     label: "Hooli",
     stageId: "7",
     contactEmail: "gavin@hooli.com",
-    contactName: "Gavin Belson",
+    name: "Gavin Belson",
     notes: [
       {
         id: nanoid(),

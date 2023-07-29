@@ -44,8 +44,16 @@ export interface Stage {
   id: string;
   label: string;
 }
-/** Should Integrate Youtube and Sex Educators */
 
+
+export interface Vocab {
+  word: string;
+  definition: string;
+  slangTerm: boolean;
+  synomyns?: string[]; 
+}
+
+/** Should Integrate Youtube and Sex Educators */
 /** Integrations */
 export interface Integration {
   title: 'Slack' | 'Jira' | 'Hubspot' | 'Salesforce';
