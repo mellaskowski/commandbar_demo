@@ -26,12 +26,12 @@ export default function CompanyEdit() {
 
     const form = document.getElementById('edit-company-form') as HTMLFormElement | null;
     if (form) {
-      const contactName = (form.elements.namedItem('contactName') as HTMLInputElement).value;
+      const name = (form.elements.namedItem('name') as HTMLInputElement).value;
       const contactEmail = (form.elements.namedItem('contactEmail') as HTMLInputElement).value;
       const annualContractValue = (form.elements.namedItem('annualContractValue') as HTMLInputElement).value;
       const stageId = (form.elements.namedItem('stage') as HTMLInputElement).value;
 
-      editCompanyDetails(company.id, 'contactName', contactName);
+      editCompanyDetails(company.id, 'name', name);
       editCompanyDetails(company.id, 'contactEmail', contactEmail);
       editCompanyDetails(company.id, 'annualContractValue', annualContractValue);
       editCompanyDetails(company.id, 'stageId', stageId);
@@ -80,15 +80,15 @@ export default function CompanyEdit() {
                     <div className="py-5 px-4 border-t border-gray-200 sm:px-6">
                       <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
                         <div className="sm:col-span-1">
-                          <label htmlFor="contactName" className="block text-sm font-medium text-gray-700">
+                          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                             Contact Name
                           </label>
                           <div className="mt-1">
                             <input
                               type="text"
-                              id="contactName"
+                              id="name"
                               className="block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 shadow-sm sm:text-sm"
-                              defaultValue={company.contactName}
+                              defaultValue={company.name}
                             />
                           </div>
                         </div>

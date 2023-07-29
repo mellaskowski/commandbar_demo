@@ -81,7 +81,7 @@ export default function CompanyDetail() {
                     <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
                       <div className="sm:col-span-1">
                         <dt className="text-sm font-medium text-gray-500">Contact name</dt>
-                        <dd className="mt-1 text-sm text-gray-900">{company.contactName}</dd>
+                        <dd className="mt-1 text-sm text-gray-900">{company.name}</dd>
                       </div>
 
                       <div className="sm:col-span-1">
