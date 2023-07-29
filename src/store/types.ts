@@ -13,20 +13,22 @@ export interface Icon extends Record<string, unknown> {
 
 export interface IconDescription {
   awards: string; // make own interface when fields are known
-
+  industry: string[];
 }
 
 /** Companies in Sex Tech */
 export interface Company extends Record<string, unknown> {
   id: string;
+  name: string;
   label: string;
   stageId: string;
-  founders: string[];
+  founders: string[] | Icon[];
   siteURL: string;
   notes: CompanyNote[];
   labels: string[];
   annualContractValue: number;
   updatedAt?: number;
+  stockAbbr?: string;
   reminder?: string;
   icon?: string;
 }
@@ -42,6 +44,7 @@ export interface Stage {
   id: string;
   label: string;
 }
+/** Should Integrate Youtube and Sex Educators */
 
 /** Integrations */
 export interface Integration {

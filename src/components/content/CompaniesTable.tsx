@@ -61,20 +61,20 @@ const CompanyRow = ({ company }: { company: Company }) => {
   };
 
   return (
-    <tr key={company.contactEmail} onClick={onClick} className="hover:shadow-lg transition-all cursor-pointer">
+    <tr key={company.name} onClick={onClick} className="hover:shadow-lg transition-all cursor-pointer">
       <td className="py-4 pr-3 pl-4 text-sm whitespace-nowrap sm:pl-6">
         <div className="flex items-center">
           <div className="shrink-0 w-10 h-10">
             <img className="w-10 h-10 rounded-full" src={company.icon} alt="" />
           </div>
           <div className="ml-4 text-left">
-            <div className="text-gray-900">{company.label}</div>
+            <div className="text-gray-900">{company.name}</div>
           </div>
         </div>
       </td>
       <td className="py-4 px-3 text-sm text-left text-gray-500 whitespace-nowrap">
-        <div className="font-medium text-gray-900">{company.contactName}</div>
-        <div className="text-gray-500">{company.contactEmail}</div>
+        <div className="font-medium text-gray-900">{company.name}</div>
+        {/*<div className="text-gray-500">{company.contactEmail}</div>*/}
       </td>
       <td className="py-4 px-3 text-sm text-gray-500 whitespace-nowrap">
         <span className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">
