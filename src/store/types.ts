@@ -7,8 +7,11 @@ declare module 'valtio' {
 export interface Icon extends Record<string, unknown> {
   id: string;
   name: string;
-  description: IconDescription;
+  bio: string;
+  description: string;
+  // description: IconDescription;
   occupation: string[];
+  lgbt?: string;
 }
 
 export interface IconDescription {

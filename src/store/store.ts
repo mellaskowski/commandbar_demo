@@ -4,12 +4,14 @@
 import { proxy } from 'valtio';
 import companies from './data/companies';
 import stages from './data/stages';
+import icons from './data/icons';
 import integrations from './data/integrations';
-import { Company, Integration, Notification, Stage, User } from './types';
+import { Company, Icon, Integration, Notification, Stage, User } from './types';
 
 export interface Store {
   activeCompany: Company | undefined;
   companies: Company[];
+  icons: Icon[];
   stages: Stage[];
   integrations: Integration[];
   currentUser: User;
@@ -20,6 +22,7 @@ export interface Store {
 const store: Store = proxy({
   activeCompany: undefined,
   companies,
+  icons,
   stages,
   integrations,
   currentUser: {

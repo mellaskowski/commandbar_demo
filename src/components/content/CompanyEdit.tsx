@@ -16,9 +16,9 @@ export default function CompanyEdit() {
   if (!company) return <div>Not found</div>;
 
   const breadcrumbs = [
-    { name: "Leads", href: "/leads" },
-    { name: company.label, href: `/leads/${company.id}` },
-    { name: "Edit", href: `/leads/${company.id}/edit` },
+    { name: "Companies", href: "/Companies" },
+    { name: company.label, href: `/Companies/${company.id}` },
+    { name: "Edit", href: `/Companies/${company.id}/edit` },
   ];
 
   const onSave = (e: FormEvent) => {
@@ -32,11 +32,10 @@ export default function CompanyEdit() {
       const stageId = (form.elements.namedItem('stage') as HTMLInputElement).value;
 
       editCompanyDetails(company.id, 'name', name);
-      editCompanyDetails(company.id, 'contactEmail', contactEmail);
       editCompanyDetails(company.id, 'annualContractValue', annualContractValue);
       editCompanyDetails(company.id, 'stageId', stageId);
       form.reset();
-      navigate(`/leads/${company.id}`);
+      navigate(`/Companies/${company.id}`);
     }
   };
 
@@ -101,7 +100,7 @@ export default function CompanyEdit() {
                               type="email"
                               id="contactEmail"
                               className="block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 shadow-sm sm:text-sm"
-                              defaultValue={company.contactEmail}
+                              // defaultValue={company.contactEmail}
                             />
                           </div>
                         </div>

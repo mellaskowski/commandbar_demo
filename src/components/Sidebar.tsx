@@ -5,7 +5,7 @@ import classNames from './utils';
 import { Link, useLocation } from 'react-router-dom';
 
 const navigation = [
-  { name: 'Leads', href: '/leads', icon: UsersIcon },
+  { name: 'Companies', href: '/Companies', icon: UsersIcon },
   {
     name: 'Integrations',
     href: '/integrations',
